@@ -26,6 +26,8 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: 4.8rem;
+	color:white;
+	font-weight:400;
 }
 
 h2 {
@@ -52,4 +54,144 @@ ul {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+button {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color:white;
+}
+
+input, option, select {
+	text-transform:uppercase;
+	font-size:2rem;
+}
+/*******************************
+HEADER
+*******************************/
+header {
+	background:black;
+	height:150vh;
+	position:absolute;
+}
+
+.hero {
+	background:url(../assets/mainLP-hero.jpg);
+	height:120vh;
+	background-size:cover;
+}
+
+.headerText {
+	width:80%;
+	padding: 10%;
+	h1 {
+	background: rgba(0,0,0,0.2)
+	}
+	button {
+		display:block;
+		padding:2.5%;
+		margin-top:2.5%;
+		border:none;
+		&:nth-child(2) {
+			background:red;
+		}
+		&:last-child {
+			background:black;
+		}
+	}
+}
+
+.nav1 {
+	background: black;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding:0 5%;
+	text-decoration:none;
+	.nav1Left {
+		display:flex;
+		flex-direction:row;
+		img {
+			padding-right:5%;
+		}
+		a {
+			color:white;
+			text-transform: uppercase;
+			font-size:1.3rem;
+		}
+		.emailUs, .callUs {
+			display:flex;
+			flex-direction:row;
+			align-items: center;
+			border-left:1px solid lightgrey;
+			border-right:1px solid lightgrey;
+			padding:3% 3%;
+		}
+	}
+	.nav1Right {
+		justify-content:right;
+		position:relative;
+		margin:1% 0;
+		&:after {
+			content:url(../assets/topnav-magnifyingglass.png);
+			position:absolute;
+			top:8px;
+			right:10px;
+		}
+		input {
+			background:grey;
+			border:none;
+			padding:3%;
+		}
+	}
+}
+
+.nav2 {
+	background: #646461;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	text-decoration:none;
+	padding: 1% 0;
+	a {
+		color:white;
+		text-transform: uppercase;
+	}
+}
+
+.features {
+	margin:0 auto;
+	position:relative;
+	top:-20px;
+	width:95%;
+	.slider {
+		background:white;
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		padding:3% 0;
+		margin:0 auto;
+	}
+	.searchbar {
+		display:flex;
+		flex-direction:row;
+		justify-content:space-around;
+		position:absolute;
+		background:url(../assets/mainLP-dropdown-bg.jpg);
+		width:100%;
+		padding:2.5% 0;
+		input[type="search"] {
+			width:200px;
+		}
+		.searchBarSearch{
+			position:relative;
+			&:after {
+				content:url(../assets/topnav-magnifyingglass.png);
+				position:absolute;
+				top:-10px;
+				right:10px;
+			}
+		}
+	}
+}
+
 
